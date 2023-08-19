@@ -1,0 +1,111 @@
+
+.toppage img{
+  max-height: 200%;
+  height: 250px;
+  width: 1903px;
+  position: relative;
+  bottom: 5px;
+
+}
+
+.focus{
+  position: absolute;
+  left: 50px;
+}
+
+.whatcanyousell{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  position: relative;
+  left: 100px;
+  top: 160px;
+}
+
+
+.partnerwithus{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  position: relative;
+  right: 50px;
+  top: 280px;
+}
+
+.AAA img{
+  max-height: 200%;
+  height: 250px;
+  width: 1903px;
+  position: relative;
+  top: 370px;
+
+}
+
+.check{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  position: relative;
+  right: 10px;
+  top: 500px;
+}
+
+.areyou{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  position: relative;
+  left: 140px;
+  top: 670px;
+}
+
+
+.signup2 a{
+  display: block;
+  position: relative;
+  bottom: 40px;
+  height: 45px;
+  width: 300px;
+  font-size: 15px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 45px;
+  color: #fff;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.signup2{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  position: relative;
+  left: 335px;
+  top: 770px;
+}
+
+.signup2 i{
+  padding-right: 0px;
+  font-size: 20px;
+}
+.signup2 a{
+  background: linear-gradient(to right,  #53a70f 0%, #3eac12 100%);
+  margin: 20px 0 15px 0;
+}
+.signup2 a:hover{
+  background: linear-gradient(to left,  #367007 0%, #036e1a 100%);
+  margin: 20px 0 15px 0;
+}
+  
+
+.hover img{
+  width: 100%;
+  position: relative;
+  top: 530px;
+}
+

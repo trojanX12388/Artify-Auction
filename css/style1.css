@@ -1,0 +1,49 @@
+
+.slide-container{
+  overflow: hidden;
+  position: relative;
+  top: 70px;
+  width: 100%;
+ 
+}
+.slide-content{
+  width: 6000px;
+  border-radius: 2px;
+}
+.card{
+  width: 1000px;
+  border-radius: 2px;
+  background-color: #000000;
+}
+.image-content,
+.card-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.image-content{
+  position: relative;
+}
+.card-image{
+  position: relative;
+  height: 900px;
+  width: 2000px;
+  background: #000000;
+
+}
+.card-image .card-img{
+  height: 800px;
+  width: 2000px;
+  border-radius: 10px;
+}
+
+.swiper-pagination-bullet{
+
+  background-color: #cf2620;
+  opacity: 1;
+  z-index: -11;
+}
+.swiper-pagination-bullet-active{
+  background-color: #8d0808;
+}

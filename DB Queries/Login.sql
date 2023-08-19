@@ -1,0 +1,8 @@
+CREATE TABLE Login
+(
+	loginID NUMERIC IDENTITY (1,1) NOT NULL
+		CONSTRAINT PK_loginID PRIMARY KEY
+	, Email VARCHAR (255) NOT NULL
+	, Password VARCHAR (255) NOT NULL
+	, Verification_Code text NOT NULL,
+)

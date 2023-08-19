@@ -1,0 +1,37 @@
+
+.toppage img{
+  max-height: 200%;
+  height: 550px;
+  width: 1903px;
+  position: relative;
+  bottom: 5px;
+
+}
+
+.artifytext img{
+  position: absolute;
+  top: 200px;
+  left: 500px;
+}
+
+.creative img{
+  position: absolute;
+  top: 400px;
+  left: 550px;
+}
+
+
+.description img{
+  width: 1500px;
+  height: 500px;
+  position: absolute;
+  top: 800px;
+  left: 200px;
+}
+
+.hover img{
+  width: 100%;
+  position: relative;
+  top: 530px;
+}
+

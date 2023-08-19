@@ -1,0 +1,149 @@
+
+.admincontainer{
+    background: #DADADA;
+    position: absolute;
+    top: 550px;
+    left: 1200px;
+    max-width: 600px;
+    width: 400px;
+    height: 200px;
+    padding: 25px 30px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15);
+  }
+  .admincontainer form .title{
+    font-size: 30px;
+    font-weight: 600;
+    margin: 20px 0 10px 0;
+    position: relative;
+    bottom: 35px;
+    left: 120px;
+  }
+  
+  .admincontainer form .artist{
+      font-size: 30px;
+      font-weight: 600;
+      margin: 20px 0 10px 0;
+      position: relative;
+      bottom: 50px;
+      left: 115px;
+    }
+  
+  .admincontainer form .input-box{
+    width: 100%;
+    height: 45px;
+    margin-top: 15px;
+    position: relative;
+  }
+  .admincontainer form .input-box input{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    font-size: 16px;
+    border: none;
+  }
+  .admincontainer form .underline::before{
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background: #ccc;
+    left: 0;
+    bottom: 0;
+  }
+  .admincontainer form .underline::after{
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background: linear-gradient(to right, #39a70d 0%, #199109 100%);
+    left: 0;
+    bottom: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all 0.3s ease;
+  }
+  .admincontainer form .input-box input:focus ~ .underline::after,
+  .admincontainer form .input-box input:valid ~ .underline::after{
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+  .admincontainer form .button{
+    position: relative;
+    top: -70px;
+    margin: 40px 0 20px 0;
+    background: linear-gradient(to right, #39a70d 0%, #199109 100%);
+  }
+
+  .admincontainer .option{
+    font-size: 14px;
+    text-align: center;
+    color: #070606;
+    position: relative;
+    top: -50px;  
+  }
+
+  .admincontainer .option1{
+    font-size: 14px;
+    text-align: center;
+    color: #070606;
+    position: relative;
+    top: -20px;  
+  }
+
+
+  
+.admincontainer .input-box input[type="submit"]{
+  background: linear-gradient(to right, #39a70d 0%, #199109 100%);
+  font-size: 17px;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.admincontainer .input-box input[type="submit"]:hover{
+  letter-spacing: 1px;
+}
+
+.admincontainer .or{
+  position: relative;
+  top: -20px;
+  left: -50px;
+}
+
+
+.admincontainer .applyonline a{
+  display: block;
+  position: relative;
+  left: 180px;
+  bottom: 130px;
+  height: 45px;
+  width: 100px;
+  font-size: 15px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 45px;
+  color: #fff;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+
+.admincontainer .applyonline{
+  position: relative;
+  top: 20px;
+}
+
+.admincontainer .applyonline i{
+  padding-right: 0px;
+  font-size: 20px;
+}
+.admincontainer .applyonline a{
+  background: linear-gradient(to right,  #a74e38 0%, #a84c3c 100%);
+  margin: 20px 0 15px 0;
+}
+.admincontainer .applyonline a:hover{
+  background: linear-gradient(to left,  #613d25 0%, #522828 100%);
+  margin: 20px 0 15px 0;
+}
+  

@@ -1,0 +1,1268 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+html, body{
+  display: grid;
+  width: 100%;
+  position: relative;
+  top: 70px;
+  right: 0px;
+  background: linear-gradient(to right, #cfcbce 0%, #cecccd 100%);
+}
+::selection{
+  background: #c7c5c6;
+
+}
+.container{
+  background: #DADADA;
+  position: relative;
+  top: -20px;
+  left: 260px;
+  max-width: 1500px;
+  height: 800px;
+  width: 1500px;
+  padding: 25px 30px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15);
+}
+.container form .title{
+  font-size: 30px;
+  font-weight: 600;
+  margin: 20px 0 10px 0;
+  position: relative;
+  bottom: 35px;
+  left: 120px;
+}
+
+.container form .artlover{
+    font-size: 30px;
+    font-weight: 600;
+    margin: 20px 0 10px 0;
+    position: relative;
+    bottom: 30px;
+    left: 0px;
+  }
+
+
+.container form .input-box{
+  width: 100px;
+  height: 45px;
+  margin-top: 15px;
+  position: relative;
+  bottom: 40px;
+}
+
+
+
+.container .createnew a{
+  display: block;
+  position: relative;
+  bottom: 40px;
+  height: 45px;
+  width: 100px;
+  font-size: 15px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 45px;
+  color: #fff;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.container .createnew{
+  position: relative;
+  top: -40px;
+}
+
+.container .createnew i{
+  padding-right: 0px;
+  font-size: 20px;
+}
+.container .createnew a{
+  background: linear-gradient(to right,  #635b59 0%, #645e5d 100%);
+  margin: 20px 0 15px 0;
+}
+.container .createnew a:hover{
+  background: linear-gradient(to left,  #2c2927 0%, #353131 100%);
+  margin: 20px 0 15px 0;
+}
+  
+
+.container .facebook a,
+.container .twitter a{
+  display: block;
+  position: relative;
+  bottom: 40px;
+  height: 45px;
+  width: 100%;
+  font-size: 15px;
+  text-decoration: none;
+  padding-left: 20px;
+  line-height: 45px;
+  color: #fff;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.container .facebook i,
+.container .twitter i{
+  padding-right: 12px;
+  font-size: 20px;
+}
+.container .twitter a{
+  background: linear-gradient(to right,  #d14d19 0%, #ec3a0d 100%);
+  margin: 20px 0 15px 0;
+}
+.container .twitter a:hover{
+  background: linear-gradient(to left,  #fa440c 0%, #f74215 100%);
+  margin: 20px 0 15px 0;
+}
+.container .facebook a{
+  background: linear-gradient( to right,  #3b5998 0%, #476bb8 100%);
+  margin: 20px 0 50px 0;
+}
+.container .facebook a:hover{
+  background: linear-gradient( to left,  #3b5998 0%, #476bb8 100%);
+  margin: 20px 0 50px 0;
+}
+
+
+.title{
+  font-size: 30px;
+  font-weight: 600;
+  margin: 20px 0 10px 0;
+  position: absolute;
+  bottom: 350px;
+  left: 1200px;
+}
+
+
+.artlover{
+    font-size: 30px;
+    font-weight: 600;
+    margin: 20px 0 10px 0;
+    position: absolute;
+    bottom: 300px;
+    left: 1120px;
+  }
+
+.leftmenu{
+  position: relative;
+  top: 60px;
+}
+  
+.leftmenu ul {
+  list-style-type: none;
+  margin: 0;
+  width: 310px;
+  padding: 0;
+  overflow: hidden;
+  background-color: #d1cdcd;
+}
+
+.leftmenu li {
+  padding: 5px;
+  border-right:1px solid #bbb;
+}
+
+.leftmenus li:last-child {
+  border-right: none;
+}
+
+.leftmenu li a {
+  display: block;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  width: 300px;
+  text-align: left;
+  padding: 10px 50px;
+  text-decoration: none;
+}
+
+.leftmenu li a:hover:not(.active) {
+  background-color: #9e9898;
+}
+
+
+
+.leftmenu .menulogo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 20px;
+}
+
+
+.leftmenu .followinglogo {
+  position: absolute;
+  top: 80px;
+  left: 20px;
+  width: 20px;
+}
+
+
+.leftmenu .orderslogo {
+  position: absolute;
+  top: 140px;
+  left: 20px;
+  width: 20px;
+}
+
+
+.leftmenu .addresslogo {
+  position: absolute;
+  top: 200px;
+  left: 15px;
+  width: 30px;
+}
+
+
+.leftmenu .wishlistlogo {
+  position: absolute;
+  top: 260px;
+  left: 20px;
+  width: 20px;
+}
+
+
+.profilepic{
+  border-radius: 50%;
+  border: 3px solid #24520e;
+  position: relative;
+  top: 10px;
+  left: 90px;
+  width: 120px;
+  height: 120px;
+  
+}
+
+
+.profile{
+  border-radius: 50%;
+  border: 3px solid #24520e;
+  width: 120px;
+  height: 120px;
+  
+}
+
+.username{
+  color: #000000;
+  text-align: left;
+  align-items: left;
+}
+
+.email{
+  color: #9e9898;
+  text-align: center;
+  align-items: center;
+}
+
+.account-email {
+  align-items: left;
+  text-align: left;
+  position: relative;
+  top: 20px;
+  left: 30px;
+
+}
+
+/* Profile Modal */
+
+
+.profile_modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  top: -100px;
+  right: 150px;
+  width: 0px;
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
+  border: 3px solid #fafafa;
+}
+
+.profile_modal-content {
+  position: fixed;
+  top: 250px;
+  right: 250px;
+  width: 1000px;
+  
+}
+
+
+.profiletext{
+  position: relative;
+  left: 20px;
+  width: 1000px;
+}
+
+.profile_modal-header {
+  padding: 1px 1px;
+  background-color: rgb(250, 250, 250);
+  color: rgb(0, 0, 0);
+  border: 1px solid #6d6565;
+  height: 400px;
+
+}
+
+.profile_modal-body {
+  background-color: rgb(255, 255, 255);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  position: relative;
+  color: rgb(10, 10, 10);
+  top: 0px;
+  right: 0px;
+  width: 280px;
+  height: 100px;
+  border: 3px solid #ffffff;
+}
+
+
+.profile_modal-footer {
+  border-top: 3px solid #575555;
+  background-color: rgb(255, 255, 255);
+  color: rgb(196, 187, 187);
+}
+
+.accountmenu{
+  background: url(Background/Account.png);
+  height: 52px;
+  width: 55px;
+  position: absolute;
+  top: 10px;
+  left: 1800px;
+}
+
+
+
+.profilecontent{
+  position: relative;
+  align-items: left;
+  text-align: left;
+  top: -20px;
+}
+  
+.profilecontent ul {
+  list-style-type: none;
+  margin: 0;
+  width: 310px;
+  overflow: hidden;
+  background-color: rgb(250, 250, 250);
+}
+
+.profilecontent li {
+  padding: 20px;
+
+}
+
+.profilecontent li:last-child {
+  border-right: none;
+}
+
+.profilecontent li a {
+  display: block;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  width: 300px;
+  text-align: left;
+  padding: 10px 50px;
+  text-decoration: none;
+
+}
+
+.profilecontent li a:hover:not(.active) {
+  background-color: #9e9898;
+}
+
+
+
+.accountcontent{
+  position: relative;
+  align-items: left;
+  text-align: left;
+  top: -325px;
+  left: 400px;
+}
+  
+.accountcontent ul {
+  list-style-type: none;
+  margin: 0;
+  width: 310px;
+  overflow: hidden;
+  background-color: rgb(250, 250, 250);
+}
+
+.accountcontent li {
+  padding: 20px;
+
+}
+
+.accountcontent li:last-child {
+  border-right: none;
+}
+
+.accountcontent li a {
+  display: block;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  width: 300px;
+  text-align: left;
+  padding: 10px 50px;
+  text-decoration: none;
+
+}
+
+.accountcontent li a:hover:not(.active) {
+  background-color: #9e9898;
+}
+
+
+/* PROFILE */
+
+
+.dropdown-content .deletebutton{
+  
+  position: relative;
+  top: 60px;
+  left: 20px;
+}
+
+.dropdown-content form .button{
+  margin: 40px 0 20px 0;
+  background: linear-gradient(to right, #0b0c0b 0%, #080808 100%);
+}
+.dropdown-content .deletebutton input[type="submit"]{
+  background: linear-gradient(to right, #393a38 0%, #363836 100%);
+  width: 160px;
+  font-size: 12px;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.dropdown-content .deletebutton input[type="submit"]:hover{
+  color: #f00b0b;
+
+}
+
+
+.dropdown-content .updatebutton{
+  
+  position: relative;
+  top: 40px;
+  left: 20px;
+}
+
+.dropdown-content .updatebutton input[type="submit"]{
+  background: linear-gradient(to right, #1991af 0%, #1883c2 100%);
+  width: 160px;
+  font-size: 12px;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.dropdown-content .updatebutton input[type="submit"]:hover{
+  color: #1ddb0c;
+
+}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  left: 310px;
+  top: -255px;
+  background-color: #f1f1f194;
+  width: 1100px;
+  height: 760px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 20px 20px 20px 20px;
+  border-style: groove;
+  border-color: 1px #000000;
+}
+
+
+.profileinfo{
+  position: relative;
+  left: 100px;
+  top: 20px;
+}
+
+.profileinfo input{
+  padding: 8px;
+  margin-left: 20px;
+  margin-top: 5px;
+  
+}
+
+.profileinfo input[type="text"]{
+  width: 200px;
+}
+
+
+.row2 span{
+  margin-right: 420px;
+
+}
+
+
+.row2 input{
+  margin-right: 50px;
+  width: 400px;
+  position: relative;
+  right: 20px;
+}
+
+
+.row3 input[type="number"]{
+  margin-right: 40px;
+  width: 250px;
+  position: relative;
+  right: 20px;
+}
+
+
+.row3 input[type="text"]{
+  margin-right: 35px;
+  width: 250px;
+  position: relative;
+  right: 20px;
+}
+
+
+.row4 input[type="text"],input[type="number"]{
+  margin-right: 50px;
+  width: 400px;
+  position: relative;
+  right: 20px;
+}
+
+
+.row5 input[type="text"],input[type="number"]{
+  margin-right: 50px;
+  width: 400px;
+  position: relative;
+  right: 20px;
+}
+
+
+.row6 input[type="date"]{
+  margin-right: 50px;
+  width: 250px;
+  position: relative;
+  right: 20px;
+}
+
+/* FOLLOWING */
+
+.dropdown2:hover .dropdown2-content {display: block;}
+
+
+.followingtext{
+  position: relative;
+  left: 20px;
+  width: 100px;
+}
+
+
+.dropdown2-content {
+  display: none;
+  position: absolute;
+  left: 310px;
+  top: -255px;
+  background-color: #f1f1f194;
+  width: 1100px;
+  height: 760px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 20px 20px 20px 20px;
+  border-style: groove;
+  border-color: 1px #000000;
+}
+
+
+.followingpic{
+  border-radius: 50%;
+  position: relative;
+  top: 10px;
+  left: 90px;
+  width: 100px;
+  height: 100px;
+}
+
+
+.dropdown2-content .followinginfo{
+  position: relative;
+  left: 220px;
+  bottom: 70px;
+  width: 400px;
+}
+
+
+.dropdown2-content .followingemail{
+  text-decoration:  underline;
+  color: #363836a8;
+}
+
+.followingtable{
+
+    padding: 12px;
+    
+    height: 650px;
+    
+    width: 1070px;
+    
+    border-radius: 10px;
+    
+    box-shadow: 1px 2px 1px 2px rgb(230, 229, 229);
+  
+    margin: 15px;
+    
+    overflow-y: auto;
+    
+    overflow-x: auto;
+    
+    }
+
+.following{
+  position: relative;
+  left: 500px;
+  bottom: 70px;
+}
+
+
+.followingtable input[type="submit"]{
+  width: 200px;
+  height: 40px;
+  border-radius: 10px 10px 10px 10px ;
+  background-color: rgb(129, 255, 255);
+}
+
+
+.nofollowing{
+  position: absolute;
+  left: 60px;
+  top: 100px;
+  color: #4b4747a2;
+}
+
+/* ORDERS */
+
+.dropdown3:hover .dropdown3-content {display: block;}
+
+
+.dropdown3-content {
+  display: none;
+  position: absolute;
+  left: 310px;
+  top: -255px;
+  background-color: #f1f1f194;
+  width: 1100px;
+  height: 760px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 20px 20px 20px 20px;
+  border-style: groove;
+  border-color: 1px #000000;
+}
+
+.line{
+  width: 1050px;
+  margin-left: 20px;
+}
+
+.orderheader span{
+  margin-right: 40px;
+  margin-left: 40px;
+
+}
+
+
+.topheader span{
+  margin-right: 100px;
+  margin-left: 20px;
+
+}
+
+
+.topheader .history{
+  font-size: 14px;
+  width: 200px;
+  color: #1991af;
+  margin-left: 700px;
+
+}
+
+
+.ordertable{
+
+  padding: 12px;
+  
+  height: 500px;
+  
+  width: 1070px;
+  
+  border-radius: 10px;
+  
+  box-shadow: 1px 2px 1px 2px rgb(230, 229, 229);
+
+  margin: 20px;
+  
+  overflow-y: auto;
+  
+  overflow-x: auto;
+  
+  }
+
+.orderinfo span{
+  width: 300px;
+}
+
+.category1{
+  position: sticky;
+  left: 15px;
+  top: 0px;
+}
+
+.category2{
+  position: sticky;
+  left: 100px;
+}
+
+
+.category3{
+  position: sticky;
+  left: 255px;
+}
+
+
+.category4{
+  position: sticky;
+  left: 430px;
+}
+
+
+.category5{
+  position: sticky;
+  left: 545px;
+}
+
+
+.category6{
+  position: sticky;
+  left: 740px;
+}
+
+
+.category22{
+  position: sticky;
+  left: 870px;
+  height: 100px; width: 100px; border-radius: 3%;
+}
+
+.noorders{
+  position: absolute;
+  left: 500px;
+  bottom: 400px;
+  color: #4b4747a2;
+}
+/* BIDS */
+
+.dropdown4:hover .dropdown4-content {display: block;}
+
+
+.dropdown4-content {
+  display: none;
+  position: absolute;
+  left: 310px;
+  top: -255px;
+  background-color: #f1f1f194;
+  width: 1100px;
+  height: 760px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 20px 20px 20px 20px;
+  border-style: groove;
+  border-color: 1px #000000;
+}
+
+
+.bidinfo span{
+  width: 300px;
+}
+
+
+.nobids{
+  position: absolute;
+  left: 500px;
+  bottom: 400px;
+  color: #4b4747a2;
+}
+
+
+.category11{
+  position: sticky;
+  left: 20px;
+  top: 0px;
+}
+
+.category7{
+  position:sticky;
+  left: 260px;
+}
+
+
+.category8{
+  position: sticky;
+  left: 200px;
+}
+
+
+.category9{
+  position:sticky;
+  left: 470px;
+}
+
+
+.category10{
+  position: sticky;
+  left: 680px;
+}
+
+
+.categoryA{
+  position: relative;
+  left: 40px;
+  top: 0px;
+}
+
+.categoryB{
+  position: relative;
+  left: 200px;
+}
+
+
+.categoryC{
+  position:relative;
+  left: 360px;
+}
+
+
+.categoryD{
+  position: relative;
+  left: 540px;
+}
+
+
+
+
+/* WISHLISTS */
+
+.dropdown5:hover .dropdown5-content {display: block;}
+
+
+.dropdown5-content {
+  display: none;
+  position: absolute;
+  left: 310px;
+  top: -255px;
+  background-color: #f1f1f194;
+  width: 1100px;
+  height: 760px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 20px 20px 20px 20px;
+  border-style: groove;
+  border-color: 1px #000000;
+}
+
+
+.dropdown5-content .wishinfo{
+  position: relative;
+  left: 220px;
+  bottom: 70px;
+  width: 400px;
+}
+
+
+.dropdown5-content .wishemail{
+  text-decoration:  underline;
+  color: #363836a8;
+}
+
+.wishtable{
+
+    padding: 12px;
+    
+    height: 650px;
+    
+    width: 1070px;
+    
+    border-radius: 10px;
+    
+    box-shadow: 1px 2px 1px 2px rgb(230, 229, 229);
+  
+    margin: 15px;
+    
+    overflow-y: auto;
+    
+    overflow-x: auto;
+    
+    }
+
+.following{
+  position: relative;
+  left: 500px;
+  bottom: 70px;
+}
+
+
+.wishtable input[type="submit"]{
+  width: 200px;
+  height: 40px;
+  border-radius: 10px 10px 10px 10px ;
+  background-color: rgb(129, 255, 255);
+}
+
+
+.nowish{
+  position: absolute;
+  left: 60px;
+  top: 100px;
+  color: #4b4747a2;
+}
+
+
+/* ARTIST ACCOUNT MANAGE */
+
+
+
+.leftmenu .dashboardlogo {
+  position: absolute;
+  top: 80px;
+  left: 20px;
+  width: 20px;
+}
+
+
+.leftmenu .addartworklogo {
+  position: absolute;
+  top: 140px;
+  left: 20px;
+  width: 20px;
+}
+
+
+.leftmenu .artworklogo {
+  position: absolute;
+  top: 200px;
+  left: 15px;
+  width: 30px;
+}
+
+
+
+/* DASHBOARD */
+
+.dropdown-dash:hover .dropdown-dash-content {display: block;}
+
+
+.dashboardtext{
+  position: relative;
+  left: 20px;
+  width: 100px;
+}
+
+
+.dropdown-dash-content {
+  display: none;
+  position: absolute;
+  left: 310px;
+  top: -255px;
+  background-color: #f1f1f194;
+  width: 1100px;
+  height: 760px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 20px 20px 20px 20px;
+  border-style: groove;
+  border-color: 1px #000000;
+}
+
+
+
+.dropdown-dash-content .followinginfo{
+  position: relative;
+  left: 220px;
+  bottom: 70px;
+  width: 400px;
+}
+
+
+.dropdown-dash-content .followingemail{
+  text-decoration:  underline;
+  color: #363836a8;
+}
+
+
+.nodash{
+  position: absolute;
+  left: 60px;
+  top: 100px;
+  color: #4b4747a2;
+}
+
+/* ADD ARTWORK */
+
+.dropdown-addart:hover .dropdown-addart-content {display: block;}
+
+
+
+.addartworktext{
+  position: relative;
+  left: 20px;
+  width: 100px;
+}
+
+
+.dropdown-addart-content {
+  display: none;
+  position: absolute;
+  left: 310px;
+  top: -255px;
+  background-color: #f1f1f194;
+  width: 1100px;
+  height: 760px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 20px 20px 20px 20px;
+  border-style: groove;
+  border-color: 1px #000000;
+}
+
+
+.dropdown-addart-content .postbutton{
+  
+  position: absolute;
+  top: 600px;
+  left: 720px;
+}
+
+.dropdown-addart-content form .button{
+  margin: 40px 0 20px 0;
+  background: linear-gradient(to right, #1b4b6b 0%, #162c8b 100%);
+}
+.dropdown-addart-content .postbutton input[type="submit"]{
+  background: linear-gradient(to right, #133d5f 0%, #0d496b 100%);
+  width: 160px;
+  font-size: 12px;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.dropdown-addart-content .postbutton input[type="submit"]:hover{
+  color: #0bf00b;
+
+}
+
+
+.dropdown-addart-content .updatebutton{
+  
+  position: relative;
+  top: 40px;
+  left: 20px;
+}
+
+.dropdown-addart-content .updatebutton input[type="submit"]{
+  background: linear-gradient(to right, #1991af 0%, #1883c2 100%);
+  width: 160px;
+  font-size: 12px;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.dropdown-addart-content .updatebutton input[type="submit"]:hover{
+  color: #1ddb0c;
+
+}
+
+.dropdown-addart:hover .dropdown-addart-content {display: block;}
+
+
+
+.addartinfo{
+  position: relative;
+  left: 100px;
+  top: 20px;
+}
+
+.addartinfo input{
+  padding: 8px;
+  margin-left: 20px;
+  margin-top: 5px;
+  
+}
+
+.addartinfo input[type="text"]{
+  width: 200px;
+}
+
+
+.addartinfo .row1 span{
+  margin-right: 360px;
+
+}
+
+
+.addartinfo .row1 input{
+  margin-right: 50px;
+  width: 400px;
+  position: relative;
+  right: 20px;
+}
+
+
+.addartinfo .row2 span{
+  margin-right: 400px;
+
+}
+
+
+.addartinfo .row2 input{
+  margin-right: 50px;
+  width: 400px;
+  position: relative;
+  right: 0px;
+}
+
+
+.addartinfo .row2 select{
+  margin-right: 50px;
+  width: 400px;
+  height: 40px;
+  position: relative;
+  right: 0px;
+}
+
+
+.addartinfo .row3 span{
+  margin-right: 210px;
+
+}
+
+
+.addartinfo .row3 input[type="number"]{
+  margin-right: 40px;
+  width: 250px;
+  position: relative;
+  right: 20px;
+}
+
+
+
+.addartinfo .row3 input[type="date"]{
+  margin-right: 40px;
+  width: 250px;
+  position: relative;
+  right: 20px;
+}
+
+
+.addartinfo .row3 input[type="time"]{
+  margin-right: 40px;
+  width: 150px;
+  position: relative;
+  right: 20px;
+}
+
+
+.addartinfo .row4 input[type="text"],input[type="number"]{
+  margin-right: 50px;
+  width: 400px;
+  position: relative;
+  right: 20px;
+}
+
+
+
+.addartinfo .row5 span{
+  margin-right: 810px;
+
+}
+
+
+.addartinfo .row5 .selecttext span{
+  color: #9c9393;
+  position: relative;
+  left: 350px;
+
+}
+
+
+.addartinfo .row5 .line{
+  width: 850px;
+  margin-left: 50px;
+}
+
+
+.addartinfo .row5 .selected{
+  margin-left: 360px;
+}
+
+
+
+
+.addartinfo .row5 .uploadart input[type="file"]{
+  margin-right: 50px;
+  width: 250px;
+  position: relative;
+  right: 20px;
+}
+
+
+
+
+
+
+
+/* ARTWORKS */
+
+.dropdown4:hover .dropdown4-content {display: block;}
+
+
+.dropdown4-content {
+  display: none;
+  position: absolute;
+  left: 310px;
+  top: -255px;
+  background-color: #f1f1f194;
+  width: 1100px;
+  height: 760px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 20px 20px 20px 20px;
+  border-style: groove;
+  border-color: 1px #000000;
+}
+
+
+
+.artworktext{
+  position: relative;
+  left: 20px;
+  width: 100px;
+}
+

@@ -1,0 +1,853 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: cover;
+    
+  }
+
+nav{
+  background: rgb(0, 0, 0);
+  overflow: hidden;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 20;
+}
+nav:after{
+  content: '';
+  clear: both;
+  display: table;
+}
+nav .logo{
+  float: left;
+  color: rgb(0, 0, 0);
+  font-size: 27px;
+  font-weight: 600;
+  line-height: 70px;
+  padding-left: 60px;
+}
+nav ul{
+  float: right;
+  margin-right: 40px;
+  list-style: none;
+  position: relative;
+  right: 500px;
+
+}
+nav ul li{
+  display: inline-block;
+  background: rgb(0, 0, 0);
+  margin: 0 5px;
+}
+nav ul li a{
+  color: white;
+  line-height: 70px;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 8px 15px;
+}
+nav ul li a:hover{
+  color: rgb(68, 212, 157);
+  border-radius: 5px;
+  box-shadow:  0 0 5px #0b8339,
+               0 0 10px #b1e2ab;
+}
+nav ul ul li a:hover{
+  box-shadow: none;
+}
+nav ul ul{
+  position: absolute;
+  top: 90px;
+  border-top: 3px solid rgba(19, 121, 41, 0.87);
+  opacity: 0;
+  visibility: hidden;
+  transition: top .3s;
+}
+nav ul ul ul{
+  border-top: none;
+}
+nav ul li:hover > ul{
+  top: 70px;
+  opacity: 1;
+  visibility: visible;
+}
+nav ul ul li{
+  position: relative;
+  margin: 0px;
+  width: 150px;
+  float: none;
+  display: list-item;
+  border-bottom: 1px solid rgba(0,0,0,0.3);
+}
+nav ul ul li a{
+  line-height: 50px;
+}
+nav ul ul ul li{
+  position: relative;
+  top: 10px;
+  left: 10px;
+}
+
+.fa-plus{
+  font-size: 15px;
+  margin-left: 40px;
+}
+@media all and (max-width: 968px) {
+  nav ul{
+    margin-right: 0px;
+    float: left;
+  }
+  nav .logo{
+    padding-left: 30px;
+    width: 100%;
+  }
+  .show + a, ul{
+    display: none;
+  }
+  nav ul li,nav ul ul li{
+    display: block;
+    width: 100%;
+  }
+  nav ul li a:hover{
+    box-shadow: none;
+  }
+  .show{
+    display: block;
+    color: white;
+    font-size: 18px;
+    padding: 0 20px;
+    line-height: 160px;
+    cursor: pointer;
+  }
+  .show:hover{
+    color: rgb(209, 108, 13);
+  }
+  .icon{
+    display: block;
+    color: rgb(109, 37, 37);
+    position: absolute;
+    top: 0;
+    right: 40px;
+    line-height: 70px;
+    cursor: pointer;
+    font-size: 25px;
+  }
+  nav ul ul{
+    top: 70px;
+    border-top: 0px;
+    float: none;
+    position: static;
+    display: none;
+    opacity: 1;
+    visibility: visible;
+  }
+  nav ul ul a{
+    padding-left: 40px;
+  }
+  nav ul ul ul a{
+    padding-left: 80px;
+  }
+  nav ul ul ul li{
+    position: static;
+  }
+  [id^=btn]:checked + ul{
+    display: block;
+  }
+  nav ul ul li{
+    border-bottom: 0px;
+  }
+  span.cancel:before{
+    content: '\f00d';
+  }
+}
+
+.nav input{
+    width: 240px;
+    height: 35px;
+    background: transparent;
+    border-bottom: 1px solid #098833;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    font-family: sans-serif;
+    position: relative;
+    top: -400px;
+    left: -10px;
+}
+
+.nav input:focus{
+    outline: none;
+    
+}
+
+
+.content{
+  z-index: -1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+header{
+  font-size: 35px;
+  font-weight: 600;
+  padding: 10px 0;
+}
+p{
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  bottom: 3px;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
+  -webkit-animation-name: fadeIn; 
+  -webkit-animation-duration: 0.4s;
+  animation-name: fadeIn;
+  animation-duration: 0.4s;
+  
+}
+
+/* Modal Content */
+.modal-content {
+  position: fixed;
+  top: 70px;
+  background-color: rgba(139, 108, 92, 1);
+  width: 300px;
+  -webkit-animation-name: slideIn;
+  -webkit-animation-duration: 0.4s;
+  animation-name: slideIn;
+  animation-duration: 0.4s;
+
+  
+}
+
+/* The Close Button */
+.close {
+  color: rgb(211, 100, 9);
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: rgb(121, 89, 74);
+  color: rgb(19, 16, 15);
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color: rgb(121, 89, 74);
+}
+
+@-webkit-keyframes slideIn {
+  from {left: -30px; opacity: 0} 
+  to {left: 0; opacity: 1}
+}
+
+@keyframes slideIn {
+  from {left: -30px; opacity: 0}
+  to {left: 0; opacity: 1}
+}
+
+@-webkit-keyframes fadeIn {
+  from {opacity: 0} 
+  to {opacity: 1}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0} 
+  to {opacity: 1}
+}
+
+
+/* Button Icon*/
+
+.buttonmenu{
+  cursor: pointer;
+  color: #0e0d0d;
+  transition: 0.4s ease;
+  width: 70px;
+  height: 60px;
+  background: url(Background/menu.png);
+  position: relative;
+  top: 0px;
+  left: 90px;
+  cursor: pointer;
+  border: none;
+}
+
+
+.bookspace{
+  width: 65px;
+  height: 70px;
+  background: url(Background/bookspacemenu.png);
+  position: relative;
+  top: 9px;
+  left: 90px;
+  cursor: pointer;
+}
+
+
+.artify{
+  width: 250px;
+  height: 25px;
+  position: relative;
+  left: 100px;
+  bottom: 10px;
+
+}
+
+
+.account_modal {
+  display: none; 
+  position: fixed; 
+  z-index: 2000; 
+  top: 70px;
+  right: 150px;
+  width: 0px;
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
+  -webkit-animation-name: accfadeIn; 
+  -webkit-animation-duration: 0.4s;
+  animation-name: accfadeIn;
+  animation-duration: 0.4s;
+  border: 3px solid #fafafa;
+}
+
+.account_modal-content {
+  position: fixed;
+  top: 70px;
+  right: 20px;
+  width: 300px;
+  height: 160px;
+  -webkit-animation-name: accslideIn;
+  -webkit-animation-duration: 0.4s;
+  animation-name: accslideIn;
+  animation-duration: 0.4s
+  
+}
+
+.account_modal-header {
+  background-color: rgb(19, 20, 19);
+  color: rgb(235, 225, 225);
+
+}
+
+.account_modal-body {
+  background-color: rgb(255, 255, 255);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  position: relative;
+  color: rgb(10, 10, 10);
+  top: 0px;
+  right: 0px;
+  width: 100%;
+  height: 160px;
+  border: 3px solid #1f1b1b;
+}
+
+
+.account_modal-footer {
+  border-top: 3px solid #575555;
+  background-color: rgb(255, 255, 255);
+  color: rgb(196, 187, 187);
+}
+
+.accountmenu{
+  background: url(Background/Account.png);
+  height: 52px;
+  width: 55px;
+  position: absolute;
+  top: 10px;
+  left: 1800px;
+}
+
+
+.account_modal-email {
+  align-items: center;
+  text-align: center;
+
+}
+
+.account_modal-body {
+  align-items: center;
+  text-align: center;
+
+}
+
+.closeacc {
+  color: rgb(223, 220, 217);
+  background-color: rgb(19, 20, 19);
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  border: none;
+  position: relative;
+  top: 0px;
+  right: 16px;
+}
+
+.closeacc:hover,
+.closeacc:focus {
+  color: #ac2222;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+.profileicon{
+  border-radius: 50%;
+  color: #693131;
+  border: 3px solid #24520e;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 60px;
+  height: 60px;
+  
+}
+
+.profileiconbutton{
+  border-radius: 50%;
+  border: 3px solid #000000;
+  position: absolute;
+  top: -3px;
+  left: 1800px;
+}
+
+.profilepic{
+  border-radius: 50%;
+  border: 3px solid #24520e;
+  position: relative;
+  top: 10px;
+  left: 90px;
+  width: 120px;
+  height: 120px;
+  
+}
+
+
+@-webkit-keyframes accslideIn {
+  from {top: -70px; opacity: 0} 
+  to {top: 70px; opacity: 1}
+}
+
+@keyframes accslideIn {
+  from {top: -70px; opacity: 0}
+  to {top: 70px; opacity: 1}
+}
+
+@-webkit-keyframes accfadeIn {
+  from {opacity: 0} 
+  to {opacity: 1}
+}
+
+@keyframes accfadeIn {
+  from {opacity: 0} 
+  to {opacity: 1}
+}
+
+.search {
+  width: 350px;
+  height: 970px;
+  position: absolute;
+  top: -30px;
+  left: 740px;
+}
+
+.search-term {
+  width: 100%;
+  border: 3px solid rgb(0, 0, 0);
+  border-right: none;
+  padding: 5px;
+  height: 40px;
+  border-radius: 20px 20px 20px 20px;
+  outline: none;
+  color: #0a0c0b;
+  font-size: 20px;
+}
+
+.search-term:focus {
+  color: #00b4cc;
+}
+
+.search-button {
+  width: 35px;
+  height: 30px;
+  border: 1px solid #fff;
+  background: #fff;
+  text-align: center;
+  color: #fff;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 3px;
+  position: relative;
+  bottom: 35px;
+  left: 300px;
+}
+
+.wraptext {
+  width: 30%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+
+@-webkit-keyframes bookslideIn {
+  from {top: -70px; opacity: 0} 
+  to {top: 70px; opacity: 1}
+}
+
+@keyframes bookslideIn {
+  from {top: -70px; opacity: 0}
+  to {top: 70px; opacity: 1}
+}
+
+@-webkit-keyframes bookfadeIn {
+  from {opacity: 0} 
+  to {opacity: 1}
+}
+
+@keyframes bookfadeIn {
+  from {opacity: 0} 
+  to {opacity: 1}
+}
+
+
+/* MAIN PAGE CSS */
+
+.page-nntimg{
+  z-index: -1;
+  position: absolute;
+  top: 220px;
+  left: 1000px;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+
+
+
+
+.logoutbutton {
+  width: 200px;
+  text-align: center;
+  color: rgb(27, 24, 21);
+  font-size: 20px;
+  position: absolute;
+  border-radius: 10px 10px 10px 10px;
+  left: 100px;
+  top: 440px;
+  background-color: #e2a32f;
+}
+
+.ARTIFYAUCTION{
+  position: absolute;
+  top: 200px;
+  left: 500px;
+  z-index: 5;
+}
+
+
+.CREATIVEMEETSCONNECTIVITY{
+  position: absolute;
+  top: 750px;
+  left: 150px;
+  z-index: 5;
+}
+
+
+.privacy{
+  position: absolute;
+  top: 25px;
+  left: 1700px;
+}
+
+
+.botlogo{
+  position: absolute;
+  top: 15px;
+  left: 20px;
+}
+
+
+.terms{
+  position: absolute;
+  top: 25px;
+  left: 1450px;
+}
+
+
+
+
+.navbar {
+  overflow: hidden;
+  background-color: #000000;
+  position: relative;
+  top: 2300px;
+  height: 90px;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #1f9739;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background: #256918;
+  color: black;
+}
+
+.navbar a.active {
+  background-color: #000000;
+  color: rgb(23, 99, 33);
+}
+
+.icons{
+  position: relative;
+  top: 30px;
+  left: 120px;
+}
+.icons ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #000000;
+}
+
+.icons li {
+  float: left;
+  padding: 5px;
+}
+
+.icons li a {
+  display: block;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.signs ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.signs li {
+  padding: 5px;
+  border-right:1px solid #bbb;
+}
+
+.signs li:last-child {
+  border-right: none;
+}
+
+.signs li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.signs li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.signs .manage {
+  background-color: #229c6f;
+}
+
+
+.signs .logout {
+  background-color: #b95435;
+}
+
+
+
+.explore {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px 20px;
+  align-items: center;
+  position: relative;
+  top: 150px;
+  left: 0px;
+
+}
+
+.more img{
+  width: 100%;
+  height: 300px;
+  position: relative;
+  top: 250px;
+}
+
+.moremenu {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px 20px;
+  align-items: center;
+  position: relative;
+  bottom: 40px;
+  left: 0px;
+}
+
+.links {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+  bottom: 50px;
+  left: 0px;
+}
+
+.links a{
+  color: #000;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+
+/* Book Page Contents */
+
+.artcontent {
+  width: 500px;
+  height: 200px;
+  margin: 20px;
+  position: relative;
+  top: 100px;
+  left: 200px;
+  color: rgb(61, 43, 19);
+  
+}
+
+
+.artcontent td{
+  background-color: rgb(248, 246, 242);
+  border-radius: 2%;
+  border: black;
+}
+
+
+.artcontent button {
+  width: 100px;
+  position: relative;
+  bottom: 10px;
+  left: 100px;
+  color: rgb(61, 43, 19);
+}
+
+.arttable tr{
+  width: 100px;
+  text-align: start;
+  position: relative;
+  left: 190px;
+  color: rgb(20, 17, 13);
+  background-color: aliceblue;
+
+}
+
+.arttable td{
+ width: 100px;
+ position: relative;
+ left: 190px;
+ color: rgb(26, 22, 17);
+
+}
+
+.artcontent img{
+  width: 300px;
+  height: 400px;
+  margin: 0px;
+  position: relative;
+  right: 2px;
+  color: rgb(53, 47, 39);
+  border-radius: 2%;
+
+}
+
+.artcontent p{
+  font-size: 14px;
+  color: #000000d0;
+}
+
+
+.artcontent h7{
+  position: relative;
+  bottom: 18px;
+  left: 70px;
+  font-size: 15px;
+  color: #000000;
+}
+
+.artcontent h8{
+  font-size: 15px;
+  color: #000000;
+}
+
+.table1{
+  position: relative;
+  left: 10px;
+}
+
+
+.artcontent .viewmore{
+  position: relative;
+  left: 100px;
+  width: 80px;
+  height: 20px;
+  font-size: 14px;
+  background-color: #f7efef;
+  color: #000000;
+  border-radius: 10%;
+  
+}
